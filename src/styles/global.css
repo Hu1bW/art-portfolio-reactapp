@@ -1,0 +1,113 @@
+/* Google font voor koppen */
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-family: "IM Fell Great Primer SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+/* Filterknoppen */
+.filters {
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+  font-size: larger;
+}
+.filters button {
+  margin: 0 0.3rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #ccc;
+  cursor: pointer;
+}
+.filters button.active {
+  background: #333;
+  color: #fff;
+}
+
+/* Pinterest-achtige gallery */
+.gallery {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 900px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+.image-card {
+  position: relative;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.image-card:hover {
+  transform: scale(1.02);
+}
+.image-card img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Overlay zichtbaar bij hover */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.2rem;
+  border-radius: 12px;
+}
+.image-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Modal popup */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+.close {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
