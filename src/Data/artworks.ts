@@ -13,28 +13,28 @@ export const artworks: Artwork[] = [
     title: "Skelet tekening",
     date: "2023",
     imageUrl: "../src/assets/Images/skelly.JPG",
-    tags: ["inkt", "fantasy"]
+    tags: ["inkt", "fantasy", "inktober 23"]
   },
   {
     id: 2,
     title: "Flail tekening",
     date: "2023",
     imageUrl: "../src/assets/Images/flail.JPG",
-    tags: ["fantasy", "inkt"]
+    tags: ["fantasy", "inkt", "inktober 23"]
   },
     {
     id: 3,
     title: "Pad illustratie",
     date: "2023",
     imageUrl: "../src/assets/Images/Frog_illustration.png",
-    tags: ["fantasy", "inkt"]
+    tags: ["fantasy", "inkt", "inktober 23"]
   },
     {
     id: 4,
     title: "Uil illustratie",
     date: "2023",
     imageUrl: "../src/assets/Images/OWL_illustration.png",
-    tags: ["fantasy", "inkt"]
+    tags: ["fantasy", "inkt", "inktober 23"]
   }
   ,
     {
@@ -42,7 +42,7 @@ export const artworks: Artwork[] = [
     title: "Hakmes tekening",
     date: "2023",
     imageUrl: "../src/assets/Images/haknes.JPG",
-    tags: ["fantasy", "inkt"]
+    tags: ["fantasy", "inkt", "inktober 23"]
   }
     ,
     {
@@ -67,5 +67,34 @@ export const artworks: Artwork[] = [
     date: "2023",
     imageUrl: "../src/assets/Images/gasMaskerSoldaat.png",
     tags: ["fantasy", "digitaal"]
+  }
+      ,
+    {
+    id: 9,
+    title: "Horror spin",
+    date: "2023",
+    imageUrl: "../src/assets/Images/engespin.png",
+    tags: ["fantasy", "inkt", "inktober 23"]
+  }    ,
+    {
+    id: 10,
+    title: "Dragonborn tekening",
+    date: "2024",
+    imageUrl: "../src/assets/Images/dragonborn.jpg",
+    tags: ["fantasy", "digitaal"]
+  }    ,
+    {
+    id: 11,
+    title: "Draak tekening",
+    date: "2023",
+    imageUrl: "../src/assets/Images/draakje.png",
+    tags: ["fantasy", "inktober 23", "inkt"]
+  }    ,
+    {
+    id: 12,
+    title: "Kinderboek illustratie",
+    date: "2023",
+    imageUrl: "../src/assets/Images/kinderboek.png",
+    tags: ["fantasy", "inkt", "inktober 23"]
   }
 ];
